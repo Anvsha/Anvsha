@@ -1,0 +1,18 @@
+# split fuction to separate the entry
+student_heights = input("Input a list of student heights ").split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+# sum(student_heights)= Total heights of students
+total_height =0
+for h in student_heights:
+  total_height += h
+  
+# len function can be use to get total number of students i.e len(student_heights)  
+num_of_students =0
+for student in student_heights:
+  num_of_students += 1
+
+Avg_height = total_height/num_of_students
+print(Avg_height)
+
+
